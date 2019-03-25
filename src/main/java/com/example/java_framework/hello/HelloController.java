@@ -9,6 +9,7 @@ public class HelloController {
 
     @GetMapping("/hello/{name}")
     public HelloResponse sayHi(@PathVariable String name) {
+        // TODO Next
         return generateSuccessResponse();
     }
 
