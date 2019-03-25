@@ -26,4 +26,12 @@ public class HelloControllerSpringBootTest {
         assertEquals("Hello Xxx", response.getBody().getResult());
     }
 
+    @Test
+    public void yyy() {
+        HelloResponse response
+                = this.restTemplate.getForObject("/hello/YyY",
+                HelloResponse.class);
+        assertEquals("Hello Yyy", response.getBody().getResult());
+    }
+
 }
