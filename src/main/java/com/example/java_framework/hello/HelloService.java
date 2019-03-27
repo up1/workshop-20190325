@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloService {
 
-    public HelloResponse generateSuccessResponse(String name) {
+        public HelloResponse generateSuccessResponse(String name) {
         HelloResponse response = new HelloResponse();
         response.setHeader(new Header(200L, "Success"));
         name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
