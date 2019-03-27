@@ -8,4 +8,9 @@ $docker container run -d -w /src -v $(pwd)/target/demo.jar:/src/demo.jar -p 9999
 # Remove container 
 $docker container stop $(docker container ps -q)
 $docker container prune
+
+#Create Docker Image
+$docker image build -t somkiat/demoapp:1.0 .
+
+$docker container run -d -p 9999:8080 somkiat/demoapp:1.0
 ```
