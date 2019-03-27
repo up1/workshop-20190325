@@ -8,8 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Autowired
     private HelloService helloService;
+
+    @Autowired
+    public HelloController(HelloService helloService) {
+        this.helloService = helloService;
+    }
 
     @GetMapping("/hello/{name}")
     public HelloResponse sayHi(@PathVariable String name) {
