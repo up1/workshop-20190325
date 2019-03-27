@@ -11,4 +11,6 @@ $docker container prune
 
 #Create Docker Image
 $docker image build -t somkiat/demoapp:1.0 .
+
+$docker container run -d -p 9999:8080 somkiat/demoapp:1.0
 ```
