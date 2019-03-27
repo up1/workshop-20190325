@@ -19,11 +19,6 @@ public class HelloController {
     public HelloResponse sayHi(@PathVariable String name) {
         // TODO Next
         return helloService.generateSuccessResponse(name);
-//        try {
-//            return helloService.generateSuccessResponse(name);
-//        }catch(Exception e) {
-//            return new ErrorResponse("100000");
-//        }
     }
 
 }

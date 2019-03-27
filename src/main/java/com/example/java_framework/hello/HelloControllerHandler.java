@@ -15,7 +15,6 @@ public class HelloControllerHandler {
         ErrorResponse response = new ErrorResponse(e.getMessage());
 
         return new ResponseEntity<>(response, HttpStatus.OK);
-
     }
 
 }
